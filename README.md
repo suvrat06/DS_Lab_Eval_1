@@ -26,11 +26,11 @@ To better understand the audio dynamics, we have plotted the following two graph
 
 **Waveplot of Wav-0:**
 
-![waveplot](DS_Lab_Eval_1/waveplot.PNG)
+![waveplot](waveplot.PNG)
 
 **Mel Spectrograph of Wav-0:**
 
-![mel](DS_Lab_Eval_1/mel_spectrograph.PNG)
+![mel](mel_spectrograph.PNG)
 
 # Feature Extraction: Mel Spectrograms
 Established as a matter of fact, audio files are rarely ever used directly for training deep learning models, we need to extract some features from the audio files in order to train our model. For this problem statement we’ll plot the audio signals and then train a CNN model using it. Now we have a platter of options when it comes to graphically representing our audio signals. 
