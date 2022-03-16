@@ -24,5 +24,36 @@ Upon traversal through various directories, the following personalities' voices 
 
 To better understand the audio dynamics, we have plotted the following two graphical representations of the first training example of Benjamin_Netanyau's speech.
 
+**Waveplot of Wav-0:**
+
+!https://github.com/suvrat06/DS_Lab_Eval_1/blob/main/waveplot.PNG
+
+**Mel Spectrograph of Wav-0:**
+!https://github.com/suvrat06/DS_Lab_Eval_1/blob/main/mel_spectrograph.PNG
+
+# Feature Extraction: Mel Spectrograms
+Established as a matter of fact, audio files are rarely ever used directly for training deep learning models, we need to extract some features from the audio files in order to train our model. For this problem statement we’ll plot the audio signals and then train a CNN model using it. Now we have a platter of options when it comes to graphically representing our audio signals. 
+
+Researcher have shown that Mel Spectrogram is a type of plot that plots spectrograms by employing Mel scale - which takes into consideration the dynamics of human speech and the range at which humans are accustomed to hearing. Since we are dealing with human speeches, we are using Mel spectrograms to train our CNN model.
+
+# Model Building
+
+As stated, we will be using a Convolutional Neural Network. The features of the CNN trained are enlisted below:
+
+-	No. of Convolutional Layers: 1
+-	Activation Function for convolutional/hidden layers: ReLU
+-	Activation Function for output layer: Softmax
+-	Optimizer: Adam
+-	Learning Rate: 3e-4
+-	Loss Function: sparse_categorical_crossentropy
+-	Evaluation Metric: accuracy
+
+# Model Evaluation
+Upon evaluating on the testing data, following was obtained:
+-	Training Accuracy: 97.03%
+-	Testing Accuracy: 93.20% 
+
+# Conclusion
+We have successfully fetched the audio files from the directories, pre-processed them to form Mel Spectrograph - hereafter the problem turned into an image processing problem. Since CNNs are one of the best tools to deal with training of image models, we trained a CNN and accomplished decent accuracy levels.
 
 
