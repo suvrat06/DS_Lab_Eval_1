@@ -1,4 +1,4 @@
-# DS_Lab_Eval_1
+# Speaker Recognition
 
 # Problem Statement and Methodology  
 
